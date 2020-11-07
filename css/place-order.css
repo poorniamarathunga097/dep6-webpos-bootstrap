@@ -110,15 +110,34 @@ body {
   .card-body .h1{
     right: 0;
   }
-  .place-order-submit {
-    display: block;
-    position: relative;
-    width: 100%;
-  }
-  .place-order-submit button{
+    .place-order-submit1 {
+      display: block;
+      position: fixed;
+      width: 73.5%;
+    }
+  .place-order-submit1 button{
     position: absolute;
 
   }
-  .needs-validation .btn-primary{
+ /* .needs-validation .btn-primary{
     right: 0;
-  }
+  }  */
+.form-row .btn-primary{
+  right: 0;
+  border: 1px solid black;
+}
+table{
+  position: absolute;
+}
+.place-order h1{
+  position: absolute;
+  bottom: 0;
+}
+/*.place-order-table{
+  flex-direction: row;
+}*/
+.place-order-submit #place-order{
+  position: absolute;
+  right: 6%;
+  bottom: 0;
+}

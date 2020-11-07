@@ -97,59 +97,120 @@
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2">Place Order</h1>
       </div>
-      <div class="row">
-        <form class="needs-validation">
-          <div class="form-row">
-            <div class="col-3">
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Customer ID
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">C001</a>
-                <a class="dropdown-item" href="#">C002</a>
-                <a class="dropdown-item" href="#">C003</a>
-              </div>
-            </div>
-            </div>
-            <div class="col-3">
-              <input type="text" class="form-control"  placeholder="Name">
-            </div>
-            <div class="col-md-6 mb-3">
-              <input type="text" class="form-control"  placeholder="Address" >
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="col-2">
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Item Code
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">I001</a>
-                  <a class="dropdown-item" href="#">I002</a>
-                  <a class="dropdown-item" href="#">I003</a>
+
+
+          <form class="needs-validation">
+            <div class="form-row">
+              <div class="col-2">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="CustomerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Customer ID
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">C001</a>
+                    <a class="dropdown-item" href="#">C002</a>
+                    <a class="dropdown-item" href="#">C003</a>
+                  </div>
                 </div>
               </div>
+              <div class="col-5">
+                <input type="text" class="form-control"  placeholder="Name">
+              </div>
+              <div class="col-4">
+                <input type="text" class="form-control"  placeholder="Address">
+              </div>
             </div>
-            <div class="col-3">
-              <input type="text" class="form-control" placeholder="Description">
+            <div class="form-group"></div>
+            <div class="form-row">
+              <div class="col-2">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="ItemId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Item Code
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">I001</a>
+                    <a class="dropdown-item" href="#">I002</a>
+                    <a class="dropdown-item" href="#">I003</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control"  placeholder="Description">
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control"  placeholder="Unit Price">
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control"  placeholder="Qty On Hand">
+              </div>
             </div>
-            <div class="col-3">
-              <input type="text" class="form-control" placeholder="Price" >
+            <div class="form-group"></div>
+            <div class="form-row">
+              <div class="place-order-submit1">
+                <button class="btn btn-primary" type="submit">Add to Cart</button>
+              </div>
+              <div class="col-2">
+                <input type="text" class="form-control"  placeholder="Qty">
+              </div>
             </div>
-            <div class="col-4">
-              <input type="text" class="form-control" placeholder="Unit price" >
-            </div>
+
+          </form>
+      <br><br><br>
+      <div class="place-order-table">
+      <div class="row col-12">
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th scope="col">Item Code</th>
+            <th scope="col">Description</th>
+            <th scope="col">Qty On Hand</th>
+            <th scope="col">Qty</th>
+            <th scope="col">Unit Price</th>
+            <th scope="col">Total</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th scope="row">I001</th>
+            <td>Soap</td>
+            <td>40</td>
+            <td>10</td>
+            <td>5</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <th scope="row">#</th>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+          </tr>
+          <tr>
+            <th scope="row">#</th>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+          </tr>
+          </tbody>
+        </table>
+        <!--<div class="row">
+          <div class="place-order">
+            hello
           </div>
-          <div class="form-group">
-          </div>
-            <div class="place-order-submit">
-              <button class="btn btn-primary" type="submit">Add to Cart</button>
-            </div>
-        </form>
+        </div>-->
       </div>
+
+      </div>
+
     </main>
+    <div class="row">
+      <div class="place-order-submit">
+        <button class="btn btn-primary" id="place-order" type="submit">Place Order</button>
+      </div>
+    </div>
   </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
